@@ -55,7 +55,16 @@
         <section class="section hero">
             <div class="container hero-box">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="btn accent-btn" type="button">Замовити послугу</button>
+                <button class="btn accent-btn" type="button" data-modal-open>Замовити послугу</button>
+            </div>
+            <!-- модальна форма, яка відкривається по кноці -->
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal-wrapper">
+                    <button class="close-btn" type="button" data-modal-close>
+                        <svg class="close-svg" width="18" height="18">
+                            <use href="./images/svg/sprite.svg#icon-close-btn"></use>
+                        </svg></button>
+                </div>
             </div>
         </section>
 
@@ -69,7 +78,7 @@
                                 <use href="./images/svg/sprite.svg#icon-antenna"> </use>
                             </svg>
                         </div>
-                        <h3 class="advan-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                        <h3 class="advan-title">Увага до детелей</h3>
                         <p class=" advan-text">Ідейні міркування, і навіть початок повсякденної роботи з формування
                             позиції.</p>
                     </li>
@@ -105,12 +114,19 @@
             <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="works-list">
-                    <li class="works-item"><img src="./images/main/img1.jpg" alt="Розробка" width="370" height="294">
+                    <li class="works-item">
+                        <img src="./images/main/img1.jpg" alt="Розробка" width="370" height="294">
+                        <p class="works-item-title">Десктопні додатки</p>
                     </li>
-                    <li class="works-item"><img src="./images/main/img2.jpg" alt="Адаптація" width="370" height="294">
+                    <li class="works-item">
+                        <img src="./images/main/img2.jpg" alt="Адаптація" width="370" height="294">
+                        <p class="works-item-title">Мобільні додатки</p>
+
                     </li>
                     <li class="works-item"><img src="./images/main/img3.jpg" alt="Підбір кольору" width="370"
-                            height="294"></li>
+                            height="294">
+                        <p class="works-item-title">Дизайнерські рішення</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -373,6 +389,7 @@
         </div>
     </footer>
 
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
